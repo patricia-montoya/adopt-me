@@ -1,7 +1,11 @@
 import React from "react";
 
-const Details = () => {
-  return <h1>Hi from Details component!</h1>;
+const Details = props => {
+  return (
+    <pre>
+      <code>{JSON.stringify(props, null, 4)}</code>
+    </pre>
+  );
 };
 
 export default Details;
